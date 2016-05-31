@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-width: 980px;
+            height: auto;
+            background-color: #FFE1FF;
+        }
+
+        .onepart {
+            background-image: url("20160510weiboicon/bg-4.jpg");
+            background-size: 100% 440px;
+            width: 100%;
+            height: 440px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid salmon;
+        }
+
+        .onepart-content {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        .erweima {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            float: right;
+            background: rgba(0, 0, 0, 0.4);
+            /*filter: alpha(opacity=40);*/
+            /*-moz-opacity: 0.4;*/
+            /*-khtml-opacity:0.4;*/
+            /*opacity: 0.4;*/
+        }
+
+        .erweimalist {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin: 20px 50px;
+            text-decoration: none;
+        }
+
+        .erweimalist:hover {
+            color: orange;
+        }
+
+        .erweimabottom {
+            text-align: center;
+            font-size: 8px;
+            color: white;
+        }
+
+        .erweimabottom a {
+            text-decoration: none;
+            color: orange;
+            font-size: 8px;
+        }
+
+        .downloadpart {
+            clear: both;
+            margin-left: 35%;
+        }
+
+        .downloadpart a {
+            display: block;
+            text-decoration: none;
+            font-size: 8px;
+            color: #DCDCDC;
+            width: 90px;
+        }
+
+        .downloadpart a:hover {
+            color: white;
+        }
+
+        .downloadpart li {
+            float: left;
+            list-style: none;
+        }
+
+        .neirong {
+            height: auto;
+            min-height: 800px;
+            width: 980px;
+            margin: 0 auto;
+            position: relative;
+            /*background-color: white;*/
+        }
+
+        .neironglist {
+            width: 650px;
+            height: auto;
+        }
+
+        .neironglist1 {
+            width: 100%;
+            height: 360px;
+            background: white;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .neironghead img {
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+            margin: 10px;
+            float: left;
+        }
+
+        .neirongname {
+            display: block;
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        .neirongname:hover {
+            color: salmon;
+        }
+
+        .neirongdate {
+            color: grey;
+            font-size: 8px;
+        }
+
+        .neirongdate a {
+            color: grey;
+            font-size: 8px;
+            text-decoration: none;
+        }
+
+        .neirongdate a:hover {
+            color: salmon;
+        }
+
+        .neirongp {
+            letter-spacing: 1px;
+            clear: both;
+            font-size: 15px;
+            margin: 10px;
+            color: #444444;
+            line-height: 1.5;
+        }
+
+        .neirongp a {
+            color: salmon;
+            text-decoration: none;
+        }
+
+        .neirong video {
+            width: 180px;
+            height: 180px;
+            margin: 10px;
+        }
+
+        .neirongbody {
+            width: 180px;
+            height: 180px;
+            margin: 10px;
+        }
+
+        /*.neirongbody:hover{*/
+        /*width: 200px;*/
+        /*height: 200px;*/
+        /*opacity:.5;*/
+        /*transition: all .5;*/
+        /*}*/
+        .neironglist1{
+            position: relative;
+            width: 640px;
+        }
+        .neironglist1 table{
+            position: absolute;
+            bottom: 0;
+            width: 640px;
+        }
+        .neirongtable img {
+            width: 15px;
+            height: 15px;
+        }
+
+        .neirongtable a {
+            text-decoration: none;
+            color: #888888;
+            font-size: 13px;
+        }
+
+        .neirongtable img:hover {
+            content: url("20160510weiboicon/zanhong-icon.png");
+            width: 15px;
+            height: 15px;
+        }
+
+        .neirongtable a:hover {
+            color: salmon;
+        }
+
+        .neirongtable td {
+            width: 160px;
+            text-align: center;
+            border-right: 1px solid #E8E8E8;
+            height: 25px;
+            line-height: 25px;
+        }
+        .neirongright{
+            float: right;
+            width: 300px;
+            height: auto;
+        }
+        .hottopic{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            border-radius: 5px;
+        }
+        .weibochanel {
+            background-color: white;
+            height: 130px;
+            width: 300px;
+            position: absolute;
+            top: 310px;
+            border-radius: 5px;
+        }
+        .hotwebchat{
+            background-color: white;
+            height: 500px;
+            width: 300px;
+            position: absolute;
+            top: 450px;
+            border-radius: 5px;
+        }
+        .weibofind{
+            background-color: white;
+            height: 650px;
+            width: 300px;
+            position: absolute;
+            top: 960px;
+            border-radius: 5px;
+        }
+        .hottopic h3,.weibochanel h3,.hotwebchat h3,.weibofind h3{
+            padding: 10px 20px;
+            margin: 0;
+            font-size: 15px;
+            border-bottom: 1px solid #EEE9E9;
+        }
+        .weibofind h4{
+            margin: 0;
+            font-size: 15px;
+            padding: 10px 20px 0 20px;
+        }
+        .hottopic ul,.weibochanel ul,.hotwebchat ul,.weibofind ul{
+            list-style: none;
+            font-size: 12px;
+            color: #777;
+            padding-left: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .hottopic li{
+            font-size: 12px;
+            color: #777;
+            margin: 12px 10px;
+            position: relative;
+        }
+        .hotwebchat li,.weibofind li{
+            margin:4px;
+        }
+        .hottopic a,.weibochanel a,.hotwebchat a,.weibofind a,.footer1 a{
+            color: #777777;
+            text-decoration: none;
+        }
+        .hottopic a:hover,.weibochanel a:hover,.hotwebchat a:hover,.weibofind a:hover,.footer1 a:hover{
+            color: salmon;
+        }
+        .weibochanel img,.hotwebchat img,.weibofind img{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 5px;
+        }
+        .footer1{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 170px;
+            background-color: white;
+        }
+        .footer1body{
+            width: 980px;
+            margin: 10px auto;
+        }
+        .footer1 h4{
+            margin: 0;
+            font-size: 15px;
+            padding: 20px 20px 0 20px;
+            width: 100px;
+        }
+        .footer1 table{
+            width: 1000px;
+        }
+         .footer1 td{
+             width: 250px;
+         }
+        .footer1 ul{
+            list-style: none;
+            font-size: 12px;
+            color: #777;
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .footer1 li{
+            font-size: 12px;
+            color: #777;
+            margin: 12px 10px 12px 0;
+        }
+        .footer2{
+            height: 100px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFAF0;
+        }
+        .footer2-1 td{
+            text-align: center;
+            font-size: 12px;
+            width: 80px;
+        }
+        .footer2 a{
+            color: #777777;
+            text-decoration: none;
+        }
+        .footer2 a:hover{
+            color: salmon;
+        }
+        .footer2-2 td{
+            text-align: center;
+            font-size: 12px;
+            width: 150px;
+        }
+        .footer2-3 td{
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+        }
+    </style>
+    <script src="//cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script>
+    <script>
+        $(function () {
+            $('#img').click(function () {
+                if ($('#flag').val() == '1') {
+//                    $('#img').src = "20160510weiboicon/bg-5.jpg";
+                    $('#img').css({
+                        'width': "300px",
+                        "height": "180px"
+                    });
+                    $('#img').attr({
+                        "src": "20160510weiboicon/bg-5.jpg"
+                    })
+                    $('#flag').val('2');
+                }else {
+                    $('#img').attr({
+                        "src":"20160510weiboicon/img-1.jpg"
+                    });
+                    $('#img').css({
+                        'width': "180px",
+                        "height": "180px"
+                    });
+                    $('#flag').val('1');
+                }
+//alert();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="onepart">
+    <div class="onepart-content">
+        <p style="color: white;font-size: 30px;margin-top: 10px;position: relative;"><img
+                src="20160510weiboicon/weibo-icon.png" style="width: 50px;height: 50px;"><i
+                style="position: absolute;top: 10px;left: 45px;">微博</i></p>
+
+        <div class="login">
+            <h1 style="color: white;letter-spacing: 5px;font-size: 35px;margin-left: 150px;margin-top: 120px;float: left;">
+                随时随地发现新鲜事</h1>
+
+            <div class="erweima">
+                <a href="#" class="erweimalist" style="float: left;">安全登录</a>
+                <a href="#" class="erweimalist">账号登录</a>
+                <img src="20160510weiboicon/saoyisao-icon.png">
+
+                <p class="erweimabottom">还没有微博？<a href="#">立即注册！</a></p>
+            </div>
+        </div>
+        <div class="downloadpart">
+            <ul>
+                <li>
+                    <img src="20160510weiboicon/applebaise-icon.png" style="float: left;"><a href="#">iPhone客户端下载</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/androidbaise-icon.png" style="float: left;"><a href="#">Android客户端下载</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/erweimabaise-icon.png" style="float: left;"><a href="#">扫二维码下载</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="neirong">
+    <div class="neironglist">
+        <div class="neironglist1">
+            <a href="#" class="neironghead"><img src="20160510weiboicon/touxiang-icon.jpg" style=""></a>
+            <a href="#" class="neirongname">大Vname</a>
+
+            <p class="neirongdate"><a href="#">5月15日 15:01</a> 来自 <a href="#">微博 weibo.com</a></p>
+
+            <p class="neirongp">我家的美丽的逗逼<a href="#">#妹纸#</a>，快来围观，不信你不喜欢！！！……真的，简直笑岔气了</p>
+            <video src="20160510weiboicon/movie.mp4" controls="controls" loop="false"></video>
+            <table class="neirongtable" style="border-top: 1px solid #E8E8E8;">
+                <tbody>
+                <tr>
+                    <td><a href="#">收藏</a></td>
+                    <td><a href="#">转发20060</a></td>
+                    <td><a href="#">评论1000</a></td>
+                    <td style="border-right: none;"><a href="#"><img src="20160510weiboicon/zanhui-icon.png">4943</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="neironglist1">
+            <a href="#" class="neironghead"><img src="20160510weiboicon/touxiang2-icon.jpg"></a>
+            <a href="#" class="neirongname">Supereman</a>
+            <p class="neirongdate"><a href="#">5月16日 20:01</a> 来自 <a href="#">微博 weibo.com</a></p>
+            <p class="neirongp">你若安好，便是<a href="#">#晴天#</a>，春天已经到了，夏天还会远吗？让我们出门<a href="#">#踏青#</a>，去寻找自己的天空！…………</p>
+            <img src="20160510weiboicon/img-1.jpg" class="neirongbody" id="img">
+            <input type="hidden" id="flag" value="1">
+            <table class="neirongtable" style="border-top: 1px solid #E8E8E8;">
+                <tbody>
+                <tr>
+                    <td><a href="#">收藏</a></td>
+                    <td><a href="#">转发20000</a></td>
+                    <td><a href="#">评论10000</a></td>
+                    <td style="border-right: none;"><a href="#"><img src="20160510weiboicon/zanhui-icon.png">4943</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="neironglist1">
+            <a href="#" class="neironghead"><img src="20160510weiboicon/touxiang3-icon.jpg" style=""></a>
+            <a href="#" class="neirongname">逗逗</a>
+
+            <p class="neirongdate"><a href="#">5月16日 20:01</a> 来自 <a href="#">微博 weibo.com</a></p>
+
+            <p class="neirongp">看看这<a href="#">#小破孩#</a>，我们要做听话的好孩子！！</p>
+            <img src="20160510weiboicon/img-2.jpg" class="neirongbody">
+            <table class="neirongtable" style="border-top: 1px solid #E8E8E8;">
+                <tbody>
+                <tr>
+                    <td><a href="#">收藏</a></td>
+                    <td><a href="#">转发200</a></td>
+                    <td><a href="#">评论110</a></td>
+                    <td style="border-right: none;"><a href="#"><img src="20160510weiboicon/zanhui-icon.png">4</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="neironglist1">
+            <a href="#" class="neironghead"><img src="20160510weiboicon/touxiang2-icon.jpg" style=""></a>
+            <a href="#" class="neirongname">Supereman</a>
+
+            <p class="neirongdate"><a href="#">5月16日 20:01</a> 来自 <a href="#">微博 weibo.com</a></p>
+
+            <p class="neirongp">你若安好，便是<a href="#">#晴天#</a>，春天已经到了，夏天还会远吗？让我们出门<a href="#">#踏青#</a>，去寻找自己的天空！…………</p>
+            <img src="20160510weiboicon/img-1.jpg" class="neirongbody">
+            <table class="neirongtable" style="border-top: 1px solid #E8E8E8;">
+                <tbody>
+                <tr>
+                    <td><a href="#">收藏</a></td>
+                    <td><a href="#">转发20000</a></td>
+                    <td><a href="#">评论10000</a></td>
+                    <td style="border-right: none;"><a href="#"><img src="20160510weiboicon/zanhui-icon.png">4943</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="neironglist1">
+            <a href="#" class="neironghead"><img src="20160510weiboicon/touxiang3-icon.jpg" style=""></a>
+            <a href="#" class="neirongname">逗逗</a>
+
+            <p class="neirongdate"><a href="#">5月16日 20:01</a> 来自 <a href="#">微博 weibo.com</a></p>
+
+            <p class="neirongp">看看这<a href="#">#小破孩#</a>，我们要做听话的好孩子！！</p>
+            <img src="20160510weiboicon/img-2.jpg" class="neirongbody">
+            <table class="neirongtable" style="border-top: 1px solid #E8E8E8;">
+                <tbody>
+                <tr>
+                    <td><a href="#">收藏</a></td>
+                    <td><a href="#">转发200</a></td>
+                    <td><a href="#">评论110</a></td>
+                    <td style="border-right: none;"><a href="#"><img src="20160510weiboicon/zanhui-icon.png">4</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="neironglist1">
+            <a href="#" class="neironghead"><img src="20160510weiboicon/touxiang2-icon.jpg" style=""></a>
+            <a href="#" class="neirongname">Supereman</a>
+
+            <p class="neirongdate"><a href="#">5月16日 20:01</a> 来自 <a href="#">微博 weibo.com</a></p>
+
+            <p class="neirongp">你若安好，便是<a href="#">#晴天#</a>，春天已经到了，夏天还会远吗？让我们出门<a href="#">#踏青#</a>，去寻找自己的天空！…………</p>
+            <img src="20160510weiboicon/img-1.jpg" class="neirongbody">
+            <table class="neirongtable" style="border-top: 1px solid #E8E8E8;">
+                <tbody>
+                <tr>
+                    <td><a href="#">收藏</a></td>
+                    <td><a href="#">转发20000</a></td>
+                    <td><a href="#">评论10000</a></td>
+                    <td style="border-right: none;"><a href="#"><img src="20160510weiboicon/zanhui-icon.png">4943</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="neironglist1">
+            <a href="#" class="neironghead"><img src="20160510weiboicon/touxiang3-icon.jpg" style=""></a>
+            <a href="#" class="neirongname">逗逗</a>
+
+            <p class="neirongdate"><a href="#">5月16日 20:01</a> 来自 <a href="#">微博 weibo.com</a></p>
+
+            <p class="neirongp">看看这<a href="#">#小破孩#</a>，我们要做听话的好孩子！！</p>
+            <img src="20160510weiboicon/img-2.jpg" class="neirongbody">
+            <table class="neirongtable" style="border-top: 1px solid #E8E8E8;">
+                <tbody>
+                <tr>
+                    <td><a href="#">收藏</a></td>
+                    <td><a href="#">转发200</a></td>
+                    <td><a href="#">评论110</a></td>
+                    <td style="border-right: none;"><a href="#"><img src="20160510weiboicon/zanhui-icon.png">4</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="neirongright">
+        <div class="hottopic">
+            <h3>热门话题</h3>
+            <ul style="float: left;">
+                <li><a href="#">#处女座才能当导演#</a></li>
+                <li><a href="#">#潜行者计划#</a></li>
+                <li><a href="#">#致单身男女#</a></li>
+                <li><a href="#">#该不该鼓励绝症病人#</a></li>
+                <li><a href="#"> #极限挑战#</a></li>
+                <li><a href="#">#江苏减招#</a></li>
+                <li><a href="#">#530网络红人节#</a></li>
+                <li><a href="#">#我不会骗你#</a></li>
+                <li><a href="#">#忍者神龟0702上映#</a></li>
+            </ul>
+            <ul class="hottopicright" style="float: right;">
+                <li>5469.8万</li>
+                <li>&nbsp; 2.7亿</li>
+                <li>&nbsp;6300万</li>
+                <li>4224.3万</li>
+                <li>&nbsp;74.7亿</li>
+                <li>&nbsp;4349万</li>
+                <li>&nbsp; 2.4亿</li>
+                <li>2728.6万</li>
+                <li>1393.4万</li>
+            </ul>
+        </div>
+        <div class="weibochanel">
+            <h3>微博频道</h3>
+            <ul style="float: left;">
+                <li>
+                    <img src="20160510weiboicon/weibopindao/remenhuati-icon.png"><a href="#">热门话题</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibopindao/zhaoren-icon.png"><a href="#">招人</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibopindao/dianying-icon.png"><a href="#">电影</a>
+                </li>
+            </ul>
+            <ul style="margin-left: 15px;float: left;">
+                <li>
+                    <img src="20160510weiboicon/weibopindao/remenweibo-icon.png"><a href="#">热门微博</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibopindao/gupiao-icon.png"><a href="#">股票</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibopindao/gouwu-icon.png"><a href="#">购物</a>
+                </li>
+            </ul>
+            <ul style="margin-left: 210px;">
+                <li>
+                    <img src="20160510weiboicon/weibopindao/tingge-icon.png"><a href="#">听歌</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibopindao/shipin-icon.png"><a href="#">视频</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibopindao/lvyou-icon.png"><a href="#">旅游</a>
+                </li>
+            </ul>
+        </div>
+        <div class="hotwebchat">
+            <h3>热门微博</h3>
+            <ul style="float: left;">
+                <li>
+                    <img src="20160510weiboicon/remenweibo/shipin-icon.png"><a href="#">视频</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/keji-icon.png"><a href="#">科技</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/caijing-icon.png"><a href="#">财经</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/zongyi-icon.png"><a href="#">综艺</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/yinyue-icon.png"><a href="#">音乐</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/jianshen-icon.png"><a href="#">健身</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/yangsheng-icon.png"><a href="#">养生</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/meinvmote-icon.png"><a href="#">美女模特</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/yulu-icon.png"><a href="#">语录</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/zhengnengliang-icon.png"><a href="#">正能量</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/lvyou-icon.png"><a href="#">旅游</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/meishi-icon.png"><a href="#">美食</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/xingzuo-icon.png"><a href="#">星座</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/sheji-icon.png"><a href="#">设计</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/meizhuang-icon.png"><a href="#">美妆</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/shenzuiyou-icon.png"><a href="#">神最右</a>
+                </li>
+            </ul>
+            <ul style="float: left;margin-left: 3px;">
+                <li>
+                    <img src="20160510weiboicon/remenweibo/shehui-icon.png"><a href="#">社会</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/kepu-icon.png"><a href="#">科普</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/licai-icon.png"><a href="#">理财</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/dianshiju-icon.png"><a href="#">电视剧</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/qiche-icon.png"><a href="#">汽车</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/jiankang-icon.png"><a href="#">健康</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/junshi-icon.png"><a href="#">军事</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/sheying-icon.png"><a href="#">摄影</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/gaoxiao-icon.png"><a href="#">搞笑</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/zhengwu-icon.png"><a href="#">政务</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/yuer-icon.png"><a href="#">育儿</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/fangdichan-icon.png"><a href="#">房地产</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/dushu-icon.png"><a href="#">读书</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/yishu-icon.png"><a href="#">艺术</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/dongman-icon.png"><a href="#">动漫</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/mengchong-icon.png"><a href="#">萌宠</a>
+                </li>
+            </ul>
+            <ul style="margin-left: 203px;">
+                <li style="margin-top: 15px;">
+                    <img src="20160510weiboicon/remenweibo/guoji-icon.png"><a href="#">国际</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/shuma-icon.png"><a href="#">数码</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/mingxing-icon.png"><a href="#">明星</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/dianying-icon.png"><a href="#">电影</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/tiyu-icon.png"><a href="#">体育</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/shoushen-icon.png"><a href="#">瘦身</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/lishi-icon.png"><a href="#">历史</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/qinggan-icon.png"><a href="#">情感</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/piyao-icon.png"><a href="#">辟谣</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/youxi-icon.png"><a href="#">游戏</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/jiaoyu-icon.png"><a href="#">教育</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/jiangzhuang-icon.png"><a href="#">家装</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/sannong-icon.png"><a href="#">三农</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/shishang-icon.png"><a href="#">时尚</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/remenweibo/zongjiao-icon.png"><a href="#">宗教</a>
+                </li>
+            </ul>
+        </div>
+        <div class="weibofind">
+            <h3>微博找人</h3>
+            <h4>名人</h4>
+            <ul style="float: left;margin-top:0;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-mingren/mingxing-icon.png"><a href="#">明星</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-mingren/zuojia-icon.png"><a href="#">作家</a>
+                </li>
+            </ul>
+            <ul style="float: left;margin-top:0;margin-left: 22px;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-mingren/shangjie-icon.png"><a href="#">商界</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-mingren/zhengfuguanyuan-icon.png"><a href="#">政府官员</a>
+                </li>
+            </ul>
+            <ul style="margin-top:0;margin-left: 200px;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-mingren/meitijingying-icon.png"><a href="#">媒体精英</a>
+                </li>
+            </ul>
+            <h4 style="clear: both;">专家</h4>
+            <ul style="float: left;margin-top:0;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/yiliao-icon.png"><a href="#">医疗</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/diantai-icon.png"><a href="#">电台</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/falv-icon.png"><a href="#">法律</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/sheji-icon.png"><a href="#">设计</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/jiaotong-icon.png"><a href="#">交通</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/zongjiao-icon.png"><a href="#">宗教</a>
+                </li>
+            </ul>
+            <ul style="float: left;margin-top:0;margin-left: 22px;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/yuer-icon.png"><a href="#">育儿</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/caijing-icon.png"><a href="#">财经</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/meizhuang-icon.png"><a href="#">美妆</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/fangchanjiazhuang-icon.png"><a href="#">房产家装</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/zhiyezhaopin-icon.png"><a href="#">职业招聘</a>
+                </li>
+            </ul>
+            <ul style="margin-top:0;margin-left: 200px;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/IThulianwnag-icon.png"><a href="#">IT互联网</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/jiaoyu-icon.png"><a href="#">教育</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/yishu-icon.png"><a href="#">艺术</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/qiche-icon.png"><a href="#">汽车</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-zhaunjia/hunqing-icon.png"><a href="#">婚庆</a>
+                </li>
+            </ul>
+            <h4 style="clear: both;">兴趣</h4>
+            <ul style="float: left;margin-top:0;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/shishang-icon.png"><a href="#">时尚</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/dianshiju-icon.png"><a href="#">电视剧</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/youxi-icon.png"><a href="#">游戏</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/qingganliangxing-icon.png"><a href="#">情感两性</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/mengchong-icon.png"><a href="#">萌宠</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/sheying-icon.png"><a href="#">摄影</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/kexue-icon.png"><a href="#">科学</a>
+                </li>
+            </ul>
+            <ul style="float: left;margin-top:0;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/meinv-icon.png"><a href="#">美女</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/yinyue-icon.png"><a href="#">音乐</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/xingzuo-icon.png"><a href="#">星座</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/yundongjianshen-icon.png"><a href="#">运动健身</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/meishi-icon.png"><a href="#">美食</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/lishi-icon.png"><a href="#">历史</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/shuma-icon.png"><a href="#">数码</a>
+                </li>
+            </ul>
+            <ul style="margin-top:0;margin-left: 200px;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/dianying-icon.png"><a href="#">电影</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/dongman-icon.png"><a href="#">动漫</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/gaoxiao-icon.png"><a href="#">搞笑</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/tiyu-icon.png"><a href="#">体育</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/lvyou-icon.png"><a href="#">旅游</a>
+                </li>
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-xingqu/junshi-icon.png"><a href="#">军事</a>
+                </li>
+            </ul>
+            <h4 style="clear: both;">机构</h4>
+            <ul style="float: left;margin-top:0;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-jigou/zhengwu-icon.png"><a href="#">政务</a>
+                </li>
+            </ul>
+            <ul style="margin-top:0;">
+                <li>
+                    <img src="20160510weiboicon/weibozhaoren-jigou/meiti-icon.png"><a href="#">媒体</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer1" >
+    <div class="footer1body">
+        <div style="float: left;">
+            <h4>微博精彩</h4>
+            <ul style="float: left;margin-top:0;">
+                <li><a href="#">热门微博</a></li>
+                <li><a href="#">名人堂</a></li>
+                <li><a href="#">微相册</a></li>
+                <li><a href="#">微指数</a></li>
+            </ul>
+            <ul style="margin-top:0;float: left;">
+                <li><a href="#">热门话题</a></li>
+                <li><a href="#">微博会员</a></li>
+                <li><a href="#">微游戏</a></li>
+            </ul>
+        </div>
+        <div style="margin-left: 10px;float: left;">
+            <h4>手机玩微博</h4>
+            <ul>
+                <li style="float: left;"><img src="20160510weiboicon/saoyisao-icon.png" style="width: 80px;height: 80px;"></li>
+                <li  style="width: 100px;float: left;"><a href="#">扫码下载，更多版本戳这里</a></li>
+            </ul>
+        </div>
+        <div style="float: left;margin-left: 10px;">
+            <h4>认证&合作</h4>
+            <ul style="float: left;">
+                <li><a href="#">申请认证</a></li>
+                <li><a href="#">企业微博</a></li>
+                <li><a href="#">微博标识</a></li>
+                <li><a href="#">微博商学院</a></li>
+            </ul>
+            <ul style="float: left;">
+                <li><a href="#">开放平台</a></li>
+                <li><a href="#">连接网站</a></li>
+                <li><a href="#">广告服务</a></li>
+            </ul>
+        </div>
+        <div style="float: left;margin-left: 10px;">
+            <h4>微博帮助</h4>
+            <ul style="float: left;margin-top:0;">
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">自助服务</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer2" style="clear: both;">
+    <table class="footer2-1" style="margin-left: 30%;">
+        <tbody>
+        <tr>
+            <td><a href="#">微博客服</a></td>
+            <td><a href="#">意见反馈</a></td>
+            <td><a href="#">舞弊举报</a></td>
+            <td><a href="#">开放平台</a></td>
+            <td><a href="#">微博招聘</a></td>
+            <td><a href="#">新浪网导航</a></td>
+            <td><a href="#">举报处理大厅</a></td>
+            <td><select>
+                <option>中文简体</option>
+                <option>中文台湾</option>
+                <option>中文香港</option>
+                <option>English</option>
+            </select></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="footer2-2" style="margin-left: 22%;margin-top: 5px;">
+        <tbody>
+        <tr>
+            <td><a href="#">京ICP证100780号</a></td>
+            <td><a href="#">互联网药品服务许可证</a></td>
+            <td><a href="#">互联网医疗保健许可证</a></td>
+            <td><a href="#">京网文[2014]2046-296号</a></td>
+            <td><a href="#">京ICP备12002058号</a></td>
+            <td style="width: 200px;"><a href="#">增值电信业务经营许可证B2-20140447</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="footer2-3" style="margin-left: 33%;margin-top: 5px;">
+        <tbody>
+        <tr>
+            <td>Copyright © 2009-2016 WEIBO 北京微梦创科网络技术有限公司</td>
+            <td><a href="#" style="margin-left: 30px;">京公网安备11000002000019号</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

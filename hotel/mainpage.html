@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <style>
+        body,.mainlist,.head,h1,.body{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            min-width: 1000px;
+            height: auto;
+            min-height: 1000px;
+            /*border: 1px solid red;*/
+        }
+        .head{
+            background: url("image/top_bg.jpg") no-repeat;
+            background-size: 100% 140px;
+            width: 100%;
+            min-width: 1000px;
+            height: 140px;
+        }
+        .head h1{
+            text-align: center;
+            font-size: 40px;
+            width: 100%;
+            min-width: 1000px;
+            height: 140px;
+            line-height: 140px;
+            color: red;
+        }
+        .mainlist{
+            width: 100%;
+            height: 30px;
+            background-color: #8B7500;
+        }
+        .mainlist ul{
+            float: left;
+            margin: 0 auto;
+            padding-left:36%;
+            height: 30px;
+        }
+        .mainlist li{
+            float: left;
+            padding: 5px 15px;
+            list-style: none;
+            font-size: 15px;
+        }
+        .mainlist a{
+            text-decoration: none;
+            font-size: 12px;
+            color: #FFFFE0;
+            font-family: Arial;
+        }
+        .pictureshow dl{
+            position: absolute;
+            width: 100%;
+            min-width: 1000px;
+            height: 300px;
+            margin: 0;
+            border: 1px solid #e8e8e8;
+        }
+        .pictureshow dd{
+            margin: 0;
+            height: 300px;
+            overflow: hidden;
+        }
+        .pictureshow dt{
+            position: absolute;
+            left: 45%;
+            top: 250px;
+        }
+        .pictureshow img{
+            width: 100%;
+            min-width: 1000px;
+            height: 300px;
+            margin: 0;
+        }
+        .pictureshow a{
+            float: left;
+            display: block;
+            margin: 10px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            font: 700 12px/20px "宋体",sans-serif;
+            color: black;
+            text-decoration: none;
+            background: white;
+            border: 1px solid #FFFFFF;
+            border-radius: 10px;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+        }
+        .pictureshow a:hover{
+            background: red;
+            color: white;
+        }
+        .body{
+            background: -webkit-gradient(linear,100% 0,100% 100%,from(#EEDC82),to(#FAFAD2));
+            width: 100%;
+            min-width: 1000px;
+            height: 950px;
+            position: absolute;
+            top: 470px;
+        }
+        .neirong{
+            background: url("image/neirong-bg.jpg") no-repeat;
+            background-size: 980px 950px;
+            width: 980px;
+            margin: 0 auto;
+            height: 950px;
+            border: 1px solid #EEDC82;
+            border-bottom: none;
+            position: relative;
+        }
+        .rili{
+            background: url("image/riqi-bg.jpg") no-repeat;
+            width: 350px;
+            height: 350px;
+            margin: 20px;
+            position: relative;
+        }
+        .rili p{
+            font-size: 14px;
+            color: #EEDC82;
+            font-weight: bold;
+            position: absolute;
+            top: 25px;
+            left: 50px;
+        }
+        .rili span{
+            font-size: 12px;
+            color: #EEDC82;
+            font-weight: bold;
+        }
+        .rili-day{
+            position: absolute;
+            top: 120px;
+            left: 50px;
+        }
+        .rili-room{
+            position: absolute;
+            top: 120px;
+            left: 150px;
+        }
+        .rili-adults{
+            position: absolute;
+            top: 170px;
+            left: 50px;
+        }
+        .rili-children{
+            position: absolute;
+            top: 170px;
+            left: 150px;
+        }
+        .rili select{
+            width:70px;
+        }
+        .rili a{
+            position: absolute;
+            top: 235px;
+            left: 140px;
+            color: #EEDC82;
+            font-size: 15px;
+        }
+        .rili a:hover{
+            text-decoration: none;
+        }
+        .rili input{
+            position: absolute;
+            top: 330px;
+            left: 100px;
+            width: 120px;
+            height: 25px;
+            background-color: #A52A2A;
+            border: 1px solid #A52A2A;
+            border-radius: 30px;
+            color: white;
+            outline: none;
+        }
+        .location{
+            width: 350px;
+            height: 400px;
+            /*border: 1px solid red;*/
+        }
+        .location h1{
+            font-size: 20px;
+            font-family: Arial;
+            margin: 50px 0 0 30px;
+            color: #8B7500;
+        }
+        .location p{
+            font-size: 13px;
+            font-family: "楷体";
+            margin: 10px 10px 10px 30px;
+        }
+        .location img{
+            width: 300px;
+            height: 200px;
+            margin-left: 30px;
+        }
+        .location a{
+            color: cornflowerblue;
+            font-family: Arial;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .location a:hover{
+            text-decoration: none;
+        }
+        .words{
+            clear: both;
+            position: absolute;
+            left: 370px;
+            top: 20px;
+            width: 300px;
+            height: auto;
+            /*border: 1px solid red;*/
+        }
+        .words h1{
+            font-size: 20px;
+            font-family: Arial;
+            color: #8B7500;
+        }
+        .words p{
+            font-size: 13px;
+            font-family: "楷体";
+        }
+        .about,.service{
+            margin-top: 50px;
+        }
+        .photolist{
+            background: url("image/picture_bg.jpg");
+            background-size: 300px 900px;
+            width: 295px;
+            height: 800px;
+            position: absolute;
+            left: 680px;
+            top: 0;
+            /*border: 1px solid saddlebrown;*/
+        }
+        .photolist img{
+            width: 200px;
+            height: 120px;
+            margin: 10px 0 20px 50px;
+        }
+        .photolist input{
+            background-color: darkgreen;
+            width: 120px;
+            height: 25px;
+            margin-left: 90px;
+            border: 1px solid darkgreen;
+            border-radius: 30px;
+            color: white;
+            outline: none;
+
+        }
+        .footer{
+            width: 100%;
+            height: 35px;
+            border-top: 1px solid #EEDC82;
+            position: absolute;
+            bottom: 18px;
+        }
+        .footer ul{
+            float: left;
+            margin: 0 auto;
+            padding-left:25%;
+            height: 35px;
+        }
+        .footer li{
+            float: left;
+            padding: 15px 0;
+            list-style: none;
+            font-size: 12px;
+        }
+        .footer a{
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0;
+            padding:0 10px;
+            color: #8B7500;
+            font-family: Arial;
+            border-right: 1px solid #8B7500;
+        }
+        .footer p{
+            text-align: center;
+            clear: both;
+            color: #8B7500;
+        }
+    </style>
+</head>
+<body>
+<div class="head">
+    <i><h1>万美达假日酒店</h1></i>
+</div>
+<div class="mainlist">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About our Hotel</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Photogallery</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contacts</a></li>
+    </ul>
+</div>
+<div class="pictureshow">
+    <dl>
+        <dt><a href="#a">1</a><a href="#b">2</a><a href="#c">3</a></dt>
+        <dd>
+            <img src="image/hotel-1.jpg" alt="" title="" id="a">
+            <img src="image/hotel-2.jpg" alt="" title="" id="b">
+            <img src="image/hotel-3.jpg" alt="" title="" id="c">
+        </dd>
+    </dl>
+</div>
+<div class="body">
+    <div class="neirong">
+        <div class="rili">
+            <p style="">预定</p>
+            <div class="rili-riqi"  style="position: absolute;top: 70px;left: 50px;">
+                <span>入住日期</span>
+                <br>
+                <select>
+                    <option>
+                        2016
+                    </option>
+                </select>
+                <select>
+                    <option>1月</option>
+                    <option>2月</option>
+                    <option>3月</option>
+                    <option>4月</option>
+                    <option>5月</option>
+                    <option>6月</option>
+                    <option>7月</option>
+                    <option>8月</option>
+                    <option>9月</option>
+                    <option>10月</option>
+                    <option>11月</option>
+                    <option>12月</option>
+                </select>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                </select>
+            </div>
+            <div class="rili-day">
+                <span>天数</span>
+                <br>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>more</option>
+                </select>
+            </div>
+            <div class="rili-room">
+                <span>房间</span>
+                <br>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>more</option>
+                </select>
+            </div>
+            <div class="rili-adults">
+                <span>成人</span>
+                <br>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>more</option>
+                </select>
+            </div>
+            <div class="rili-children">
+                <span>儿童</span>
+                <br>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>more</option>
+                </select>
+            </div>
+            <a href="#">RESET</a>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="location">
+            <h1>LOCATIONS</h1>
+            <hr style="width: 80%;height: 0.1px;border: 1px dotted #E8E8E8;">
+            <p>
+                订房电话：67161111<br>
+                订餐电话：67255558<br>
+                地址：方城县张骞大道与文化路交叉口向北100米路东<br>
+            </p>
+            <img src="image/map.jpg">
+            <a href="#" style="margin-left: 35px;float: left;">more info</a>
+            <a href="#" style="float: right;margin-right: 20px;">ZOOM</a>
+        </div>
+        <div class="words">
+            <div class="last-news">
+                <h1>LAST NEWS</h1>
+                <hr style="width: 90%;height: 0.1px;border: 1px dotted #E8E8E8;margin-left: 0;">
+                <p>万美达主题酒店本酒店有着以人为本，服务为基础的经营理念；以绿色、营养、健康为主题，好吃不贵能融入百姓生活的经营宗旨。</p>
+            </div>
+            <div class="about">
+                <h1>WELCOME TO OUR HOTEL</h1>
+                <hr style="width: 90%;height: 0.1px;border: 1px dotted #E8E8E8;margin-left: 0;">
+                <p>万美达主题酒店本酒店有着以人为本，服务为基础的经营理念；以绿色、营养、健康为主题，好吃不贵能融入百姓生活的经营宗旨。<br><br>
+                    餐厅：宴会厅总面积可容纳800人同时用餐，是方城首家拥有中央空调的用餐、婚礼宴会厅。婚礼宴会厅设有高清LED大屏、专业炫彩舞美灯光、进口音响设备，为您的婚礼增添浪漫的时尚高贵感和万人瞩目的震撼效果。各种特色美食和各种房型是您婚庆喜宴、亲朋会客、生日宴会、同学聚会的最佳场所选择。万美达人用精心的服务和营养的搭配为您商务出行和朋友团聚增添美食的问候和期待您的光临！<br><br>
+                    客房：本酒店拥有风格独特，温馨舒适的高级商务房、豪华套房等优质房型供您选择，同时赠送精美营养早餐，中央空调24小时开放，还有无线wifi供您畅玩手机的哦！ 我们不单单追求高标准设施配置，更用专业、专心、专一的服务标准为您来打造舒适、贴心的商旅体验，期待您的莅临品享时尚尊荣。<br><br>
+                    会议室：本酒店商务多功能会议室配套齐全，会议接待，商业活动，特色会议室不但恬静而舒适，进口的音响设备和高清的LED大屏也会让您的会议如虎添翼。 本酒店大型会议室可容纳400余人，小型会议室可容纳80余人，可以满足各类大中小型会议需求，为您提供商务出行一站式服务。<br><br>
+                </p>
+            </div>
+            <div class="service">
+                <h1>OUR SERVICES</h1>
+                <hr style="width: 90%;height: 0.1px;border: 1px dotted #E8E8E8;margin-left: 0;">
+                <p>万美达主题酒店本酒店有着以人为本，服务为基础的经营理念；以绿色、营养、健康为主题，好吃不贵能融入百姓生活的经营宗旨。
+                囊括了餐厅、客房、会议室————欢迎各位莅临。</p>
+            </div>
+
+        </div>
+        <div class="photolist">
+            <a href="#"><img src="image/photo-1.jpg" style="margin-top: 120px;"></a>
+            <a href="#"><img src="image/photo-2.jpg"></a>
+            <a href="#"><img src="image/photo-3.jpg"></a>
+            <a href="#"><img src="image/photo-4.jpg"></a>
+            <input type="button" value="All Photos">
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About our Hotel</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Photogallery</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#" style="border-right: none;">Contacts</a></li>
+            </ul>
+            <p style="">Copyright&copy;WanMeiDaHoliday</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
