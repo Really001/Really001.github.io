@@ -3,8 +3,774 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+        body{
+            border: 1px solid red;
+            width: 100%;
+            min-width: 1500px;
+            height: auto;
+        }
+        .one{
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            /*float: left;*/
+        }
+        .one-img1{
+            width: 30px;
+            height: 30px;
+            margin-left: 100px;
+            float: left;
+        }
+        .one-p1{
+            font-size: 25px;
+            margin-left: 10px;
+            float: left;
+            font-weight: bold;
+        }
+        .one-right{
+            /*clear: both;*/
+            float: right;
+            margin-top: 10px;
+            margin-right:30px;
+        }
+        .one-right a{
+            float: left;
+            display: block;
+            text-decoration: none;
+            margin: 0 10px;
+            width: 80px;
+            text-align: center;
+            padding-bottom: 10px;
+            color: #999999;
+        }
+        .one-right a:hover{
+            color: #d45d5c;
+            border-bottom: 4px solid #d45d5c ;
+        }
+        .one-img2{
+            width: 15px;
+            height: 15px;
+        }
+        .two{
+            clear: both;
+            background: url("image/seven/pic01.jpg") no-repeat;
+            background-size: 100% 700px;
+            width: 100%;
+            height: 700px;
+        }
+        .two-p1{
+            font-size: 70px;
+            /*font-weight:bold;*/
+            font-family: Arial;
+            color: white;
+            padding-top: 250px;
+            margin-left: 150px;
+        }
+        .two-p2{
+            font-size: 22px;
+            width: 300px;
+            height: auto;
+            color: white;
+            font-family: '宋体';
+            margin-top: 10px;
+            margin-left: 150px;
+        }
+        .two-in1{
+            margin-left: 150px;
+            margin-top: 60px;
+            width: 350px;
+            height: 60px;
+            background-color: #FF6A6A;
+            border: 1px solid #FF6A6A;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+        }
+        .three{
+            clear: both;
+            width: 100%;
+            height:250px;
+        }
+        .three ul{
+            list-style: none;
+            float: left;
+        }
+        .three-ul1{
+            width: 250px;
+            height: auto;
+            text-align: center;
+        }
+        .three-img{
+            margin-top: 50px;
+        }
+        .three-p{
+            height: 50px;
+            margin-top: 30px;
+            color: #999999;
+            padding-right: 45px;
+            border-right: 2px solid #999999;
+        }
+        .four{
+            clear: both;
+            width: 100%;
+            height: 350px;
+            background-color: #eeeeee;
+            text-align: center;
+        }
+        .four-img1{
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+        }
+        .four-p1{
+            font-size: 55px;
+            font-family: '黑体';
+            margin-top: 40px;
+            color:#999999;
+        }
+        .five{
+            clear: both;
+            width: 100%;
+            height: 350px;
+            background: url("image/seven/pic02.jpg") no-repeat;
+            background-size: 100% 350px;
+            z-index: 100;
+        }
+        .five-1{
+            z-index: 200;
+            width: 100%;
+            height: 350px;
+            background-color: rgba(212,93,92,0.2);
+        }
+        .five-p1{
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .five-p2{
+            font-size: 13px;
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .five-choose1{
+            width: 250px;
+            height: 40px;
+            margin-left: 400px;
+            margin-top: 100px;
+        }
+        .five-choose2{
+            width: 250px;
+            height: 40px;
+            margin-left: 20px;
+            margin-top: 100px;
+        }
+        .five-choose1 option{
+            background: #999999;
+            color: black;
+        }
+        .five-in1{
+            margin-left: 20px;
+            width: 250px;
+            height:40px;
+            background-color: #d45d5c;
+            border: 1px solid #d45d5c;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+        }
+        .six{
+            clear: both;
+            width: 100%;
+            height: 600px;
+            background-color:seashell;
+            /*float: left;*/
+        }
+        .six1{
+            width:216px;
+            height: 390px;
+            margin-left: 300px;
+            margin-top: 100px;
+            float: left;
+        }
+        .six3,.six4{
+            width: 216px;
+            height: 390px;
+            margin-left: 100px;
+            margin-top: 100px;
+            float: left;
+        }
+        .six1-img1,.six3-img1,.six4-img1{
+            width: 216px;
+            height: 340px;
+            text-align: center;
+        }
+        .six1-p1,.six3-p1,.six4-p1{
+            font-size: 15px;
+            color: black;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .six1-p2,.six3-p2,.six4-p2{
+            font-size: 12px;
+            color: #999999;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .six2{
+            width: 216px;
+            height: 390px;
+            margin-left: 100px;
+            float: left;
+            margin-top: 100px;
+            /*border: 1px solid red;*/
+        }
+        .six2-p1{
+            font-size: 30px;
+            font-family: '黑体';
+            letter-spacing: 24px;
+            text-align: center;
+        }
+        .six2-p2{
+            font-size: 12px;
+            color: #999999;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .six2-img1{
+            width: 216px;
+            height: 340px;
+        }
+        .seven{
+            width: 100%;
+            height: 600px;
+        }
+        .seven1{
+            background: url("image/seven/pic07.jpg") no-repeat;
+            background-size: 100% 600px;
+            width: 70%;
+            height: 600px;
+            color: white;
+            text-align: center;
+            /*border: 1px solid saddlebrown;*/
+            float: left;
+            z-index: 100;
+            position: relative;
+        }
+        .seven1-p1{
+            margin-top: 150px;
+            font-size: 50px;
+            font-family: '黑体';
+        }
+        .seven1-p2{
+            font-size: 150px;
+            margin-top: 10px;
+            font-family: Arial;
+        }
+        .seven1-p3{
+            font-size: 20px;
+            margin-top:20px;
+            font-family: '黑体';
+        }
+        .seven-triangle{
+            width: 0;
+            height:0;
+            border-top: 20px solid transparent;
+            border-right: 30px solid white;
+            border-bottom: 20px solid transparent;
+            position:absolute ;
+            top: 50%;
+            right: 0;
+        }
+        .seven2{
+            /*border: 1px solid saddlebrown;*/
+            width: 29.5%;
+            height: 600px;
+            z-index: 300;
+            float: right;
+            /*background-color: red;*/
+        }
+        .seven2-p1{
+            color: black;
+            font-size: 20px;
+            font-family: '黑体';
+            margin-top:200px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+        .seven2-sp1{
+            color: red;
+        }
+        .seven2-p2{
+            color: #999999;
+            font-size: 10px;
+            margin-top: 15px;
+            width: 300px;
+            height: auto;
+            line-height: 25px;
+            margin-left: 25%;
+        }
+        .seven2-in1{
+            width: 100px;
+            height: 30px;
+            margin-left: 40%;
+            margin-top: 40px;
+            background-color: white;
+            border: 1px solid #FF6A6A;
+            color: #FF6A6A;
+        }
+        .eight{
+            clear: both;
+            width: 100%;
+            height: 500px;
+        }
+        .eight1{
+            width: 35%;
+            height: 500px;
+            background-color:#FF6A6A;
+            font-family: '黑体';
+            float: left;
+            text-align: center;
+        }
+        .eight1-p1{
+            font-size: 25px;
+            color: white;
+            padding-top: 200px;
+        }
+        .eight1-p2{
+            font-size: 25px;
+            color: white;
+            margin-top: 10px;
+        }
+        .eight1-in1{
+            width: 150px;
+            height: 40px;
+            margin-top: 30px;
+            background-color: #FF6A6A;
+            border: 1px solid white;
+            color: white;
+            font-size: 20px;
+            font-family: '黑体';
+        }
+
+        .eight3{
+            width: 30%;
+            height: 500px;
+            background: url("image/seven/pic08.jpg") no-repeat;
+            background-size: 100% 500px;
+            float: right;
+            position: relative;
+        }
+        .eight3-tri{
+            width: 0;
+            height:0;
+            border-top: 20px solid transparent;
+            border-left: 30px solid white;
+            border-bottom: 20px solid transparent;
+            position:absolute ;
+            top: 50%;
+            left: 0;
+        }
+        .eight2{
+        width: 35%;
+        height: 500px;
+        text-align: center;
+        font-family: '黑体';
+        border: 1px solid green;
+        margin-left: 35%;
+        }
+
+        .eight2-p1{
+        font-size: 25px;
+        color: black;
+        padding-top: 200px;
+        }
+
+        .eight2-p2{
+        font-size: 25px;
+        color: black;
+        margin-top: 10px;
+        }
+
+        .eight2-in1{
+        width: 150px;
+        height: 40px;
+        margin-top: 30px;
+        background-color: white;
+        border: 1px solid #FF6A6A;
+        color: #FF6A6A;
+        font-size: 20px;
+        font-family: '黑体';
+        }
+        .nine{
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            font-family: '黑体';
+        }
+        .nine-p1{
+            font-size: 20px;
+            color: black;
+            margin-top: 80px;
+        }
+        .nine-p2{
+            font-size: 13px;
+            color: #999999;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+        .ten{
+            width: 100%;
+            height: 500px;
+            border: 1px solid red;
+        }
+        .ten1{
+            width: 400px;
+            height: 100%;
+            margin-left: 23%;
+            border: 1px solid green;
+            font-family: '黑体';
+            float: left;
+        }
+        .ten1-h1{
+            margin-top: 10px;
+            font-size: 15px;
+            color:gray;
+        }
+        .ten1-h2{
+            margin-top: 40px;
+            font-size: 15px;
+            color: gray;
+        }
+        .ten1-p1,.ten1-p3{
+            margin-top: 20px;
+            height: 35px;
+            font-size: 12px;
+            color: #999999;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space:nowrap;
+        }
+        .ten1-p2,.ten1-p4{
+            float: right;
+            color: #999999;
+            font-size: 10px;
+        }
+        .ten2{
+            width:50%;
+            height: 100%;
+            border: 1px solid saddlebrown;
+            margin-left: 45%;
+        }
+        .ten2-in1{
+            margin: 30px;
+            background-color: #eeeeee;
+            border: 1px solid #eeeeee;
+            color: gray;
+            padding-left: 20px;
+            width: 300px;
+            height: 40px;
+            float: left;
+        }
+        .ten2-in2{
+            margin: 30px;
+            background-color: #eeeeee;
+            border: 1px solid #eeeeee;
+            color: gray;
+            padding-left: 20px;
+            width: 300px;
+            height: 40px;
+        }
+        .ten2-in3{
+            margin:0 30px 30px 30px;
+            background-color: #eeeeee;
+            border: 1px solid #eeeeee;
+            color: gray;
+            padding-left: 20px;
+            width: 300px;
+            height: 40px;
+            float: left;
+        }
+        .ten2-in4{
+            margin:0 30px 30px 30px;
+            background-color: #eeeeee;
+            border: 1px solid #eeeeee;
+            color: gray;
+            padding-left: 20px;
+            width: 300px;
+            height: 40px;
+        }
+        .ten2-in5{
+            margin:0 30px 30px 30px;
+            background-color: #eeeeee;
+            border: 1px solid #eeeeee;
+            color: gray;
+            padding-left: 20px;
+            width: 680px;
+            height: 100px;
+        }
+        .ten2-bu1{
+            width: 700px;
+            height: 40px;
+            background-color: #eeeeee;
+            border: 1px solid #eeeeee;
+            color: black;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+        .footer{
+            clear: both;
+            width: 100%;
+            height: 400px;
+            background-color: #20364c;
+            font-family: '黑体';
+        }
+        .footer-p1{
+            padding-top: 80px;
+            text-align: center;
+            font-size: 22px;
+            color: white;
+        }
+        .footer-p2{
+            font-size: 12px;
+            color: white;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .footer-in1{
+           margin-left: 38%;
+            margin-top: 20px;
+            width: 380px;
+            height: 40px;
+            background-color: white;
+            border: 1px solid white;
+            color: #999999;
+            text-align: left;
+            padding-left: 10px;
+            float: left;
+        }
+        .footer-bu1{
+            margin-top: 20px;
+            width: 80px;
+            height: 40px;
+            background-color: #999;
+            border: 1px solid #999;
+        }
+        .footer-qq img{
+            margin-top: 60px;
+            clear: both;
+            margin-left: 44%;
+            width: 30px;
+            height: 30px;
+        }
+        .footer-weibo img,.footer-bird img,.footer-diqiu img{
+            margin-top: 60px;
+            clear: both;
+            margin-left: 20px;
+            width: 30px;
+            height: 30px;
+        }
+        .footer1{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+        }
+        .footer1-p1{
+            font-size: 10px;
+            color: white;
+            margin-left: 100px;
+            height: 50px;
+            line-height: 50px;
+            float: left;
+        }
+        .footer1-a1{
+            font-size: 10px;
+            color: white;
+            float: right;
+            margin-right: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-
+<div class="whole">
+    <div class="one">
+            <img src="image/seven/icon-1.png" class="one-img1"><p class="one-p1">新世界</p>
+        <div class="one-right">
+            <a href="#">首页</a>
+            <a href="#">最新活动</a>
+            <a href="#">项目介绍</a>
+            <a href="#">爱心社区</a>
+            <a href="#">关于我们</a>
+            <a href="#"><img src="image/seven/icon-2.jpg" class="one-img2">登录</a>
+        </div>
+    </div>
+    <div class="two">
+        <p class="two-p1">Time of new life</p>
+        <p class="two-p2">新时代,年轻的人们让我们一起体验新生活,享受新生活</p>
+        <input type="button" value="开始体验" class="two-in1">
+    </div>
+    <div class="three">
+        <ul class="three-ul1" style=" margin-left: 20%;">
+            <li class="three-img"><img src="image/seven/icon-3.jpg"></li>
+            <li class="three-p"><p>打造全新世界观，让你更爱你的生活</p></li>
+        </ul>
+        <ul class="three-ul1" style="margin-left: 45px;">
+            <li class="three-img"><img src="image/seven/icon-4.jpg"></li>
+            <li class="three-p"><p>丰富多彩的公益活动，发挥新世界的主人公意识</p></li>
+        </ul>
+        <ul class="three-ul1" style="margin-left: 45px;">
+            <li class="three-img"><img src="image/seven/icon-5.jpg"></li>
+            <li class="three-p"><p>世界的新理念，超前体验未知的生活</p></li>
+        </ul>
+        <ul class="three-ul1" style="margin-left: 45px;">
+            <li class="three-img"><img src="image/seven/icon-6.jpg"></li>
+            <li class="three-p" style="border-right: none;"><p>完美的培养机制，培养你全新的世界观</p></li>
+        </ul>
+    </div>
+    <div class="four">
+        <img src="image/seven/icon-1.png" class="four-img1">
+        <p class="four-p1">关于新世界，你不知道的还有什么？</p>
+    </div>
+    <div class="five">
+        <div class="five-1">
+            <p class="five-p1">查找新世界城市活动信息</p>
+            <hr style="width: 30px;height: 0.1px;border: 1px solid white;margin-left: 49%;margin-top: 10px;">
+            <p class="five-p2">每个城市都有不同的活动信息，请自主查询你所需要了解的城市</p>
+            <select class="five-choose1">
+                <option>中国</option>
+                <option>Australia</option>
+                <option>Hong Kong</option>
+                <option>韩国</option>
+                <option>美国</option>
+            </select>
+            <select class="five-choose2">
+                <option>北京市</option>
+                <option>天津市</option>
+                <option>河北省</option>
+                <option>陕西省</option>
+                <option>内蒙古自治区</option>
+                <option>辽宁省</option>
+            </select>
+            <select class="five-choose2">
+                <option>城市</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <input type="button" value="搜&nbsp;&nbsp;索" class="five-in1">
+        </div>
+    </div>
+    <div class="six">
+        <div class="six1">
+            <img src="image/seven/pic03.jpg" class="six1-img1">
+            <p class="six1-p1">北京活动</p>
+            <p class="six1-p2">新社区大联盟</p>
+        </div>
+        <div class="six2">
+            <p class="six2-p1">上海活动</p>
+            <p class="six2-p2">夜上海新景观探索</p>
+            <img src="image/seven/pic04.jpg" class="six2-img1">
+        </div>
+        <div class="six3">
+            <img src="image/seven/pic05.jpg" class="six3-img1">
+            <p class="six3-p1">深圳活动</p>
+            <p class="six3-p2">全新海岸线观点站</p>
+        </div>
+        <div class="six4">
+            <img src="image/seven/pic06.jpg" class="six4-img1">
+            <p class="six4-p1">香港活动</p>
+            <p class="six4-p2">奢侈消费大派送</p>
+        </div>
+    </div>
+    <div class="seven">
+        <div class="seven1">
+            <p class="seven1-p1">新世界</p>
+            <p class="seven1-p2">TIME</p>
+            <p class="seven1-p3">@新世界 - 北京</p>
+            <p class="seven1-p3">2016.06.01</p>
+            <div class="seven-triangle"></div>
+        </div>
+        <div class="seven2">
+            <p class="seven2-p1">新世界/<span class="seven2-sp1">01</span></p>
+            <p class="seven2-p2">自远古以来，花朵、水晶、宝石和鸟类对人类心灵就一直有着重要意义。
+                它们对人类之所以会有如此特殊的重要意义，以及人类之所以会对它们如此着迷并感觉亲切，就是因为它们具有超凡空灵的特质。
+            </p>
+            <input type="button" class="seven2-in1" value="更多详情">
+        </div>
+    </div>
+    <div class="eight">
+        <div class="eight1">
+            <p class="eight1-p1">新时代</p>
+            <p class="eight1-p2">关爱爱生活的我们</p>
+            <hr style="width: 30px;height: 0.1px;border: 1px solid white;margin-left: 47%;margin-top: 20px;">
+            <input type="button" class="eight1-in1" value="查看更多">
+        </div>
+        <div class="eight3">
+            <div class="eight3-tri"></div>
+        </div>
+        <div class="eight2">
+        <p class="eight2-p1">新时代</p>
+        <p class="eight2-p2">关爱爱生活的我们</p>
+        <hr style="width: 30px;height: 0.1px;border: 1px solid gray;margin-left: 47%;margin-top: 20px;">
+        <input type="button" class="eight2-in1" value="查看更多">
+        </div>
+    </div>
+    <div class="nine">
+        <p class="nine-p1">成为我们的志愿者</p>
+        <hr style="width: 30px;height: 0.1px;border: 1px solid #FF6A6A;margin-left: 49%;margin-top: 10px;">
+        <p class="nine-p2">新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情</p>
+        <p class="nine-p2">那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+    </div>
+    <div class="ten">
+        <div class="ten1">
+            <h1 class="ten1-h1">新世界志愿者协议</h1>
+            <p class="ten1-p1">加入新世界志愿者的人员必须遵守中华人民共和国的先关法律法规，并且本着平等自愿的原则严格遵守相关事务。</p>
+            <p class="ten1-p2">﹀more</p>
+            <h1 class="ten1-h2">新世界志愿者权利</h1>
+            <p class="ten1-p3">新世界志愿者享受新世界内部所有自愿共享的权利</p>
+            <p class="ten1-p4">﹀more</p>
+            <h1 class="ten1-h2">更多条款</h1>
+            <p class="ten1-p4">﹀more</p>
+        </div>
+        <div class="ten2">
+            <input type="text" value="姓名：" class="ten2-in1">
+            <input type="text" value="年龄：" class="ten2-in2">
+            <input type="text" value="联系方式：" class="ten2-in3">
+            <input type="text" value="联系地址：" class="ten2-in4">
+            <input type="text" value="请简单描述您梦想的生活：" class="ten2-in5">
+            <input type="button" value="提交申请" class="ten2-bu1">
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-p1">联系我们</p>
+        <p class="footer-p2">为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯</p>
+        <p class="footer-p2">也可以通过以下任何方式关注我们动态</p>
+        <input type="submit" value="someone@email.com" class="footer-in1">
+        <button class="footer-bu1">提交</button>
+        <a href="#" class="footer-qq"><img src="image/seven/QQ-icon-bai.png"></a>
+        <a href="#" class="footer-weibo"><img src="image/seven/weibo-icon-bai.png"></a>
+        <a href="#" class="footer-bird"><img src="image/seven/bird-icon-bai.png"></a>
+        <a href="#" class="footer-diqiu"><img src="image/seven/diqiu-icon-bai.png"></a>
+    </div>
+    <div class="footer1">
+        <p class="footer1-p1">@2016新世界</p>
+        <a href="#" class="footer1-a1">Back to top</a>
+    </div>
+</div>
 </body>
 </html>
