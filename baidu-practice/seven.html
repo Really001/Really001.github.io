@@ -10,7 +10,7 @@
             outline: none;
         }
         body{
-            border: 1px solid red;
+            /*border: 1px solid red;*/
             width: 100%;
             min-width: 1500px;
             height: auto;
@@ -165,7 +165,7 @@
         .five-choose1{
             width: 250px;
             height: 40px;
-            margin-left: 400px;
+            margin-left: 20%;
             margin-top: 100px;
         }
         .five-choose2{
@@ -386,7 +386,7 @@
         height: 500px;
         text-align: center;
         font-family: '黑体';
-        border: 1px solid green;
+        /*border: 1px solid green;*/
         margin-left: 35%;
         }
 
@@ -432,13 +432,13 @@
         .ten{
             width: 100%;
             height: 500px;
-            border: 1px solid red;
+            /*border: 1px solid red;*/
         }
         .ten1{
             width: 400px;
             height: 100%;
-            margin-left: 23%;
-            border: 1px solid green;
+            margin-left: 20%;
+            /*border: 1px solid green;*/
             font-family: '黑体';
             float: left;
         }
@@ -468,8 +468,9 @@
         }
         .ten2{
             width:50%;
+            min-width: 800px;
             height: 100%;
-            border: 1px solid saddlebrown;
+            /*border: 1px solid saddlebrown;*/
             margin-left: 45%;
         }
         .ten2-in1{
@@ -510,7 +511,7 @@
             width: 300px;
             height: 40px;
         }
-        .ten2-in5{
+        .ten2-te1{
             margin:0 30px 30px 30px;
             background-color: #eeeeee;
             border: 1px solid #eeeeee;
@@ -518,6 +519,8 @@
             padding-left: 20px;
             width: 680px;
             height: 100px;
+            padding-top: 10px;
+            overflow: hidden;
         }
         .ten2-bu1{
             width: 700px;
@@ -547,16 +550,18 @@
             text-align: center;
             margin-top: 5px;
         }
-        .footer-in1{
-           margin-left: 38%;
+        .footer-te1{
+            margin-left: 38%;
             margin-top: 20px;
             width: 380px;
-            height: 40px;
+            height: 28px;
             background-color: white;
             border: 1px solid white;
             color: #999999;
             text-align: left;
             padding-left: 10px;
+            padding-top: 10px;
+            overflow: hidden;
             float: left;
         }
         .footer-bu1{
@@ -752,7 +757,8 @@
             <input type="text" value="年龄：" class="ten2-in2">
             <input type="text" value="联系方式：" class="ten2-in3">
             <input type="text" value="联系地址：" class="ten2-in4">
-            <input type="text" value="请简单描述您梦想的生活：" class="ten2-in5">
+            <!--<input type="text" value="请简单描述您梦想的生活：" class="ten2-in5">-->
+            <textarea class="ten2-te1">请简单描述您梦想的生活：</textarea>
             <input type="button" value="提交申请" class="ten2-bu1">
         </div>
     </div>
@@ -760,7 +766,8 @@
         <p class="footer-p1">联系我们</p>
         <p class="footer-p2">为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯</p>
         <p class="footer-p2">也可以通过以下任何方式关注我们动态</p>
-        <input type="submit" value="someone@email.com" class="footer-in1">
+        <!--<input type="submit" value="someone@email.com" class="footer-in1">-->
+        <textarea class="footer-te1">someone@email.com</textarea>
         <button class="footer-bu1">提交</button>
         <a href="#" class="footer-qq"><img src="image/seven/QQ-icon-bai.png"></a>
         <a href="#" class="footer-weibo"><img src="image/seven/weibo-icon-bai.png"></a>
