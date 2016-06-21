@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            width: 100%;
+            height: auto;
+            min-height: 1000px;
+        }
+        .first{
+            width: 48%;
+            height: 500px;
+            margin: 20px auto;
+            position: absolute;
+            left: 1%;
+            top: 0px;
+        }
+        .second{
+            width: 48%;
+            height: 500px;
+            margin: 20px auto;
+            position: absolute;
+            right: 1%;
+            top: 0;
+        }
+        .first dl,.second dl{
+            position: absolute;
+            width: 100%;
+            height: 500px;
+            border: 1px solid #efefda;
+        }
+        .first dd,.second dd{
+            width: 100%;
+            height: 470px;
+            overflow: hidden;
+        }
+        .first img,.second img{
+            width: 100%;
+            height:470px;
+        }
+        .first dt{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background: rgba(0,0,0,0.5);
+        }
+        .second dt{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background: rgba(241,156,158,0.5);
+        }
+        .first a,.second a{
+            display: block;
+            float: right;
+            margin: 3px;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            text-decoration: none;
+            background: #ff0238;
+            filter:alpha(opacity=50);
+            opacity: 0.5;
+            border-radius: 10px;
+        }
+        .first a:hover,.second a:hover{
+            background: #f55b7c;
+        }
+        .first h1,.second h1{
+            width: 100%;
+            height: 30px;
+            font-size: 20px;
+            text-align: center;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+<div class="first">
+    <div class="first-1"></div>
+    <dl>
+        <h1>schoolmate</h1>
+        <dt>
+            <a href="#a6">6</a><a href="#a5">5</a><a href="#a4">4</a><a href="#a3">3</a><a href="#a2">2</a><a href="#a1">1</a>
+        </dt>
+        <dd>
+            <img id="a1" name="a1" alt="" title="" src="image/mybackground/mythree1.jpg">
+            <img id="a2" name="a2" alt="" title="" src="image/mybackground/mythree2.jpg">
+            <img id="a3" name="a3" src="image/mybackground/mythree3.jpg">
+            <img id="a4" name="a4" src="image/mybackground/mythree4.jpg">
+            <img id="a5" name="a5" src="image/mybackground/mythree5.jpg">
+            <img id="a6" name="a6" src="image/mybackground/mythree6.jpg">
+
+        </dd>
+    </dl>
+</div>
+<div class="second">
+    <dl>
+        <h1>Home</h1>
+        <dt>
+            <a href="#b6">6</a><a href="#b5">5</a><a href="#b4">4</a><a href="#b3">3</a><a href="#b2">2</a><a href="#b1">1</a>
+        </dt>
+        <dd>
+            <img id="b1" name="b1" alt="" title="" src="image/mybackground/mythree1.jpg">
+            <img id="b2" name="b2" alt="" title="" src="image/mybackground/mythree2.jpg">
+            <img id="b3" name="b3" src="image/mybackground/mythree3.jpg">
+            <img id="b4" name="b4" src="image/mybackground/mythree4.jpg">
+            <img id="b5" name="b5" src="image/mybackground/mythree5.jpg">
+            <img id="b6" name="b6" src="image/mybackground/mythree6.jpg">
+
+        </dd>
+    </dl>
+</div>
+</body>
+</html>
