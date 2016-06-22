@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            min-width: 1500px;
+            height: auto;
+            /*border: 1px solid red;*/
+            background-color: #fdf6e4;
+        }
+        .one{
+            width: 100%;
+            height: 100px;
+            /*border: 1px solid red;*/
+        }
+        .one-img1{
+            margin-left: 10%;
+            margin-top: 20px;
+            float: left;
+        }
+        .one-right{
+            float: right;
+            margin-right: 10%;
+            margin-top: 20px;
+        }
+        .one-right-i1{
+            margin-top: 10px;
+            color: #94715b;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .two{
+            margin: 0 auto;
+            width: 95%;
+            height: 60px;
+            background:-webkit-gradient(linear,100% 0,100% 100%,from(#745b3d),to(#523410));
+            background: -ms-linear-gradient(top,#745b3d 0%,#523410 100%);
+            background: -moz-linear-gradient(top,#745b3d 0%,#523410 100%);
+            border: 1px solid #543811;
+            border-radius: 5px;
+        }
+        ul{
+            list-style: none;
+        }
+        .two-ul1{
+            margin-left:18%;
+            margin-top: 15px;
+            width: 60px;
+            height: 40px;
+            /*border: 1px solid red;*/
+            text-align: center;
+            float: left;
+        }
+        .two-ul2{
+            margin-left: 20px;
+            margin-top: 15px;
+            width: 100px;
+            height: 40px;
+            /*border: 1px solid red;*/
+            text-align: center;
+            float: left;
+        }
+        .two-ul3{
+            margin-left: 20px;
+            margin-top: 15px;
+            width: 110px;
+            height: 40px;
+            /*border: 1px solid red;*/
+            text-align: center;
+            float: left;
+        }
+        .two-ul4{
+            margin-left: 20px;
+            margin-top: 15px;
+            width: 120px;
+            height: 40px;
+            /*border: 1px solid red;*/
+            text-align: center;
+            float: left;
+        }
+        .two-ul5{
+            margin-left: 20px;
+            margin-top: 15px;
+            width: 100px;
+            height: 40px;
+            /*border: 1px solid red;*/
+            text-align: center;
+            float: left;
+        }
+        .two-ul6,.two-ul7,.two-ul8,.two-ul9,.two-ul10{
+            margin-left: 20px;
+            margin-top: 15px;
+            width: 90px;
+            height: 40px;
+            /*border: 1px solid red;*/
+            text-align: center;
+            float: left;
+        }
+        .two-ul1 a,.two-ul2 a,.two-ul3 a,.two-ul4 a,.two-ul5 a,.two-ul6 a,.two-ul7 a,.two-ul8 a,.two-ul9 a,.two-ul10 a{
+            color: #fff1a5;
+            text-decoration: none;
+            /*font-weight: bold;*/
+        }
+        .two a:hover{
+            color: white;
+        }
+        .two-li1{
+            font-family: '黑体';
+            font-size: 20px;
+        }
+        /*.two-li2{*/
+            /*font-family: Arial;*/
+        /*}*/
+        .three{
+            background: url("image/pic-7.jpg") no-repeat;
+            background-size: 100% 800px;
+            width: 95%;
+            height: 800px;
+            margin: 0 auto;
+            margin-top: 20px;
+            z-index: 300;
+            position: relative;
+        }
+        .three1{
+            background:rgba(255,255,255,0.4);
+            width: 96%;
+            height: 780px;
+            margin: 0 auto;
+            z-index: 200;
+            position: absolute;
+            top: 10px;
+            left: 2%;
+            float: left;
+        }
+        .three1-left1{
+            background: rgba(255,255,255,0.5);
+            width: 20%;
+            min-width: 300px;
+            height: 760px;
+            /*border: 1px solid red;*/
+            padding-top: 20px;
+            float: left;
+        }
+        .three1-p1{
+            width: 250px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+            background-color: #552a19;
+            color: white;
+            border: 1px solid #552a19;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+        .three1-p2{
+            width: 250px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+            background-color: #552a19;
+            color: white;
+            border: 1px solid #552a19;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            padding-left: 5px;
+            margin-top: 20px;
+        }
+        .three-ul1{
+            margin-top: 20px;
+            margin-left: 10%;
+        }
+        .three-ul1 li{
+            width: 85%;
+            height: 22px;
+            margin-top: 5px;
+            padding-left: 5%;
+            border-bottom: 1px dashed black;
+        }
+        .three-ul1 li:before{
+            content: url("image/three-iocn-1.png");
+            width: 10px;
+            height: 10px;
+        }
+        .three-ul1 a{
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            font-family: '黑体';
+            margin-left: 5px;
+        }
+        .three1-p3{
+            color: #8b7162;
+            text-align: center;
+            font-size: 32px;
+            font-style:italic
+        }
+        .three1-img1{
+            width: 95%;
+            height: 350px;
+            margin-left: 2.5%;
+        }
+        .three-right1{
+            width: 75%;
+            min-width: 800px;
+            height: 760px;
+            margin-top: 20px;
+            /*border: 1px solid red;*/
+            margin-left: 23%;
+        }
+        .ws_images img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="one"><!--logo和抬头部分-->
+    <img src="" class="one-img1" alt="logo">
+    <div class="one-right">
+        <img src="image/language1.gif" class="one-img2" alt="language"><br>
+        <i class="one-right-i1">热线电话：0371-68708888</i>
+    </div>
+</div>
+<div class="two"><!--酒店大分类-->
+    <ul class="two-ul1">
+        <li class="two-li1"><a href="#">首页<br>HOME</a> </li>
+        <!--<li class="two-li2"><a href="#">HOME</a> </li>-->
+    </ul>
+    <ul class="two-ul2">
+        <li class="two-li1"><a href="#">走进酒店<br>ABOUT US</a> </li>
+        <!--<li class="two-li2"><a href="#">ABOUT US</a> </li>-->
+    </ul>
+    <ul class="two-ul3">
+        <li class="two-li1"><a href="#">酒店贵宾<br>JIUDIAN VIP</a> </li>
+        <!--<li class="two-li2"><a href="#">JIUDIAN VIP</a> </li>-->
+    </ul>
+    <ul class="two-ul4">
+        <li class="two-li1"><a href="#">客房展示<br>SHOW ROOM</a> </li>
+        <!--<li class="two-li2"><a href="#">SHOW ROOM</a> </li>-->
+    </ul>
+    <ul class="two-ul5">
+        <li class="two-li1"><a href="#">会议中心<br>MEETING</a> </li>
+        <!--<li class="two-li2"><a href="#">MEETING</a> </li>-->
+    </ul>
+    <ul class="two-ul6">
+        <li class="two-li1"><a href="#">餐饮展示<br>DINNING</a> </li>
+        <!--<li class="two-li2"><a href="#">DINNING</a> </li>-->
+    </ul>
+    <ul class="two-ul7">
+        <li class="two-li1"><a href="#">休闲生活<br>LEISURE</a> </li>
+        <!--<li class="two-li2"><a href="#">LEISURE</a> </li>-->
+    </ul>
+    <ul class="two-ul8">
+        <li class="two-li1"><a href="#">旅游指南<br>TRAVEL</a> </li>
+        <!--<li class="two-li2"><a href="#">TRAVEL</a> </li>-->
+    </ul>
+    <ul class="two-ul9">
+        <li class="two-li1"><a href="#">管理咨询<br>CONSULT</a> </li>
+        <!--<li class="two-li2"><a href="#">CONSULT</a> </li>-->
+    </ul>
+    <ul class="two-ul10">
+        <li class="two-li1"><a href="#">电子杂志<br>MAGAZINE</a> </li>
+        <!--<li class="two-li2"><a href="#">MAGAZINE</a> </li>-->
+    </ul>
+</div>
+<div class="three"><!--主题内容-->
+<div class="three1">
+    <div class="three1-left1"><!--主体左侧列表内容-->
+        <p class="three1-p1">客房展示</p>
+        <ul class="three-ul1">
+            <li class="three-li1"><a href="#">花园套房</a></li>
+            <li class="three-li2"><a href="#">行政套房</a></li>
+            <li class="three-li3"><a href="#">豪华套房</a></li>
+            <li class="three-li4"><a href="#">行政单/双人房</a></li>
+            <li class="three-li5"><a href="#">商务单/双人房</a></li>
+            <li class="three-li6"><a href="#">豪华单/双人房</a></li>
+            <li class="three-li7"><a href="#">残疾人房</a></li>
+            <li class="three-li8"><a href="#">高级单人房</a></li>
+        </ul>
+        <p class="three1-p2">联系方式</p>
+        <p class="three1-p3"><img src="image/three-iocn-1.png">0371-68708888</p>
+        <img src="image/pic-1.gif" class="three1-img1">
+    </div>
+    <div id="wowslider-container1" class="three-right1"><!--主体右侧图片自动滑动-->
+        <div class="ws_images">
+            <ul>
+            <li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"></li>
+            <li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_1"></li>
+            <li><a href="http://wowslider.com/vi"><img src="data1/images/3.jpg" alt="bootstrap carousel" title="3" id="wows1_2"></a></li>
+            <li><img src="data1/images/4.jpg" alt="4" title="4" id="wows1_3"></li>
+            </ul>
+        </div>
+        <!--<div class="ws_bullets">-->
+            <!--<div>-->
+                <!--<a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1">1</span></a>-->
+                <!--<a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2">2</span></a>-->
+                <!--<a href="#" title="3"><span><img src="data1/tooltips/3.jpg" alt="3">3</span></a>-->
+                <!--<a href="#" title="4"><span><img src="data1/tooltips/4.jpg" alt="4">4</span></a>-->
+            <!--</div>-->
+        </div>
+        <div class="ws_script" style="position:absolute;left:-99%"></div>
+        <div class="ws_shadow"></div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+
+</body>
+</html>
