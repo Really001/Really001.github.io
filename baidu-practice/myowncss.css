@@ -2,16 +2,20 @@
     margin: 0;
     padding: 0;
 }
+html{
+    width: 100%;
+    height: 100%;
+}
 body{
     width: 100%;
-    height: auto;
-    min-height: 1000px;
+    height: 100%;
+    /*min-height: 1000px;*/
     /*float: left;*/
 }
 .one{
     width: 25%;
     height:100%;
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     background: url("image/mybackground/w1.jpg") no-repeat;
     background-size: 100% 100%;
     float: left;
@@ -20,7 +24,7 @@ body{
 .two{
     width: 25%;
     height: 100%;
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     background: url("image/mybackground/w2.jpg") no-repeat;
     background-size: 100% 100%;
     float: left;
@@ -29,7 +33,7 @@ body{
 .three{
     width: 25%;
     height: 100%;
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     background: url("image/mybackground/w5.jpg") no-repeat;
     background-size: 100% 100%;
     float: left;
@@ -38,7 +42,7 @@ body{
 .four{
     width: 25%;
     height: 100%;
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     background: url("image/mybackground/w4.jpg") no-repeat;
     background-size: 100% 100%;
     float: left;
@@ -49,17 +53,19 @@ a{
     font-size: 60px;
     font-family: Arial;
     position: absolute;
-    top: 35%;
-    left: 20%;
+    top: 80%;
+    right: 10%;
 }
 a:hover{
-    text-decoration:underline;
+    border: 1px solid
+
+;
 }
 .one a{
     color: white;
 }
 .two a{
-    color:purple;
+    color:greenyellow;
 }
 .three a{
     color: #edfb05;
