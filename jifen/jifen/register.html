@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/order.css"/>
+	</head>
+	<style>
+	</style>
+
+	<body>
+		<ul class="register">
+			<li>
+				<input type="text" class="register-in" placeholder="请输入手机号码"/>
+			</li>
+			<li class="register-yanzhengma" >
+				<input type="text" class="register-yanzhengmain" placeholder="请输入验证码" />
+				<img src="img/yanzhengma.png" class="register-pic" />
+			</li>
+			<li>
+				<input type="text" class="register-in" placeholder="请设置密码"/>
+			</li>
+			<li>
+				<input type="text" class="register-in" placeholder="请输入邀请码（选填）"/>
+			</li>
+			<li>
+				<p style="float: right;">填写邀请码注册可以获得50积分</p>
+			</li>
+			<li>
+				<button type="button" class="mui-btn bu-red mui-btn-outlined" onclick="sure()">确定</button>
+			</li>
+			<li>
+				<p style="text-align: center;">点击注册表示您同意《用户注册协议》</p>
+			</li>
+		</ul>
+		
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+		<script type="text/javascript">
+		function sure(){
+				alert("恭喜您，注册成功，获得新手礼包100积分！");
+		}	
+		</script>
+	</body>
+
+</html>
