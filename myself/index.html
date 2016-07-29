@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Yue</title>
+		<style>
+		html{
+			width: 100%;
+			height: auto;
+			/*border: 1px solid red;*/
+			overflow-x: hidden;
+		}
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 15px;
+				font-family: "微软雅黑", arial;
+			}
+			
+			body {
+				margin: 50px 0;
+				width: 100%;
+				height: auto;
+				background: url(img/bg-3.jpg) no-repeat bottom center;
+				overflow-x: hidden;
+				background-size: 100% 100%;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			img{
+				vertical-align: middle;
+				border: 0;
+				max-width: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.head {
+				position: relative;
+			}
+			
+			.head h1 {
+				text-align: center;
+				font-size: 5em;
+			}
+			
+			.head-p1 {
+				display: inline-block;
+				width: 100%;
+				font-size: 0.7em;
+				margin-left: 57%;
+				color: lightskyblue;
+			}
+			
+			.head-time {
+				display: inherit;
+				position: absolute;
+				left: 52%;
+			}
+			
+			.list {
+				margin: 0 5%;
+			}
+			.list a {
+				float: left;
+				width: 100%;
+				text-align: center;
+				margin: 5px 0;
+				color: black;
+				position: relative;
+			}
+			.list a:before{
+				content: "";
+				background-image: url(img/icon-snow.png);
+				background-size: 15px 15px;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				left: 0;
+				z-index: 100;
+			}
+			.list a:after{
+				content: "";
+				background-image: url(img/icon-snow.png);
+				background-size: 15px 15px;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				right: 0;
+				z-index: 100;
+			}
+			
+			.list a:hover {
+				color: hotpink;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+			
+			.introduce-pic img {
+				width: 100%;
+				height: auto;
+			}
+			
+			.recommend h1 {
+				font-size: 1.5em;
+				text-align: center;
+			}
+			
+			.recommend {
+				position: relative;
+				width: 90%;
+				height: auto;
+				margin: 20px 5%;
+			}
+			
+			.recommend dl {
+				margin: 20px 0;
+				position: absolute;
+				width: 100%;
+				height: 400px;
+				border: 1px solid orange;
+			}
+			
+			.recommend dd {
+				width: 100%;
+				height: 370px;
+				overflow: hidden;
+			}
+			
+			.recommend img {
+				width: 100%;
+				height: 370px;
+			}
+			
+			.recommend dt {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 30px;
+				background: rgba(0, 0, 0.0.5);
+			}
+			
+			.recommend a {
+				display: block;
+				float: right;
+				margin: 3px;
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				color: #FFFFFF;
+				background: orange;
+				filter: alpha(opacity=50);
+				opacity: 0.5;
+				border-radius: 50%;
+			}
+			
+			.attention-footer{
+				border: 1px solid black;
+				width: 90%;
+				margin: 150% 5% 0 5%;
+				margin-top: 135%;
+				height: auto;
+				z-index: 0;
+				position: relative;
+				
+			} 
+			.attention-footer p{	
+				padding: 2em 1em;
+			}
+			.miss-ereweima img{
+				width: 90px;
+				height: 90px;
+			}
+			.miss-ereweima p{
+				font-size: 0.6em;
+				margin: 0;
+				padding: 0;
+				color: #c5cacd;
+			}
+			
+			.miss-ereweima {
+				width: 40%;
+				position: absolute;
+				right: 10%;
+				top: -3em;
+				z-index: 1000;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="head">
+			<h1>miss</h1>
+			<a href="img/erweima.jpg" class="head-p1"><img src="img/time-icon.png" class="head-time" />不定时更新，请关注微信</a>
+		</div>
+		<hr style="margin: 10px 5%;" />
+		<ul class="list">
+			<li>
+				<a href="#">雪花秀</a>
+			</li>
+			<li>
+				<a href="#">ipoe</a>
+			</li>
+			<li>
+				<a href="#">兰芝</a>
+			</li>
+			<li>
+				<a href="#">whoo</a>
+			</li>
+			<li>
+				<a href="#">9cloud</a>
+			</li>
+			<li>
+				<a href="#">su:m</a>
+			</li>
+		</ul>
+		<div class="introduce-pic">
+			<img src="img/pic-1.jpg" />
+		</div>
+		<div class="recommend">
+			<h1>强烈推荐</h1>
+			<dl>
+				<dt>
+					<a href="#a3">3</a>
+					<a href="#a2">2</a>
+					<a href="#a1">1</a>
+				</dt>
+				<dd>
+					<img src="img/product/ahc-shuru1.JPG" id="a1" name="a1" alt="" title="" />
+					<img src="img/product/ahc-eye1.JPG" id="a2" name="a2" alt="" title="" />
+					<img src="img/product/ipoe-qidian1.JPG" id="a3" name="a3" alt="" title="" />
+				</dd>
+			</dl>
+		</div>
+		<div class="attention-footer">
+			<p style="font-size: 0.8em;">关注miss,关注你的美丽</p>
+			<div class="miss-ereweima">
+				<img src="img/erweima.jpg" class="erweima-img" />
+				<p class="erweima-gray">长按二维码关注</p>
+			</div>
+		</div>
+	</body>
+
+</html>
