@@ -1,0 +1,97 @@
+html{
+			width: 100%;
+			height: auto;
+			/*border: 1px solid red;*/
+			overflow-x: hidden;
+		}
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 15px;
+				font-family: "微软雅黑", arial;
+			}
+			
+			body {
+				margin: 50px 0;
+				width: 100%;
+				height: auto;
+				background: url(img/bg-3.jpg) no-repeat bottom center;
+				overflow-x: hidden;
+				background-size: 100% 100%;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			img{
+				vertical-align: middle;
+				border: 0;
+				max-width: 100%;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			.logo img{
+				width: 100%;
+				height: auto;
+				margin-top: 1em;
+			}
+			
+			.head {
+				position: relative;
+			}
+			
+			.head h1 {
+				text-align: center;
+				font-size: 5em;
+			}
+			.head-p1 {
+				display: inline-block;
+				width: 100%;
+				font-size: 0.7em;
+				margin-left: 57%;
+				color: lightskyblue;
+			}
+			.pic-all img
+			{
+				width: 100%;
+				height: auto;
+				margin: 0.5em 0;
+			}
+			.describe{
+				text-indent: 2em;
+				background: rgba(245,212,217,0.6);
+				padding: 0.5em;
+			}
+			.attention-footer{
+				border: 1px solid black;
+				width: 90%;
+				margin: 5em 5% 0 5%;
+				height: auto;
+				z-index: 0;
+				position: relative;	
+			} 
+			.attention-footer p{	
+				padding: 2em 1em;
+			}
+			.miss-ereweima img{
+				width: 90px;
+				height: 90px;
+			}
+			.miss-ereweima p{
+				font-size: 0.6em;
+				margin: 0;
+				padding: 0;
+				color: #c5cacd;
+			}
+			
+			.miss-ereweima {
+				width: 40%;
+				position: absolute;
+				right: 10%;
+				top: -3em;
+				z-index: 1000;
+				text-align: center;
+			}
+			
